@@ -122,3 +122,16 @@ h2 {
 .app-width {
   width: 100%;
 }
+
+.app-container {
+  width: 83.333333%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 110rem;
+}
+
+@media (min-width: 768px) {
+  .my-box {
+    width: 66.666667%;
+  }
+}
