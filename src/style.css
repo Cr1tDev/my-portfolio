@@ -52,7 +52,7 @@ h2 {
   font-weight: 700;
 }
 
-#app {
+.app {
   height: 100%;
   min-height: 100vh;
   width: 100%;
@@ -80,7 +80,7 @@ h2 {
 
 /* Responsive (md:) */
 @media (min-width: 768px) {
-  #app {
+  .app {
     /* keep same grid on medium+ screens */
     background-image: linear-gradient(
         rgba(255, 255, 255, var(--bg-gl-opacity)) 1px,
@@ -134,4 +134,68 @@ h2 {
   .my-box {
     width: 66.666667%;
   }
+}
+
+/* Header Section Styling */
+.hero-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
+}
+
+.hero-container__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* background icon styling */
+.logo-react {
+  color: #4ade80;
+  position: absolute;
+  font-size: 80px;
+  top: 10%;
+  left: 5%;
+  opacity: 0.15;
+}
+
+.logo-tailwind {
+  color: #4ade80;
+  position: absolute;
+  font-size: 80px;
+  top: 20%;
+  right: 10%;
+  opacity: 0.15;
+}
+
+.logo-javascript {
+  color: #4ade80;
+  position: absolute;
+  font-size: 80px;
+  bottom: 15%;
+  left: 15%;
+  opacity: 0.15;
+}
+
+.logo-sass {
+  color: #4ade80;
+  position: absolute;
+  font-size: 80px;
+  top: 40%;
+  right: 30%;
+  opacity: 0.15;
+}
+
+.logo-vercel {
+  color: #4ade80;
+  position: absolute;
+  font-size: 80px;
+  bottom: 50%;
+  right: 50%;
+  opacity: 0.15;
 }
