@@ -199,3 +199,43 @@ h2 {
   right: 50%;
   opacity: 0.15;
 }
+
+/* hero-section-box */
+.hero-container__box {
+  display: inline-block;
+  z-index: 10;
+  letter-spacing: 0.025em;
+}
+
+.hero-container__title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.hero-title__overlay {
+  color: #15803d;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  /* margin-bottom: 2rem; */
+}
+
+/* md: ≥768px */
+@media (min-width: 768px) {
+  .hero-title__overlay {
+    text-align: left;
+    padding-right: 1rem;
+  }
+}
+
+/* lg: ≥1024px */
+@media (min-width: 1024px) {
+  .hero-title__overlay {
+    font-size: 1.875rem;
+  }
+}

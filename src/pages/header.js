@@ -1,4 +1,5 @@
 import getBackgroundIcon from '../component/backgroundIcon';
+import gradientTextTitle from '../component/gradientText';
 
 const header = function () {
   return `
@@ -6,6 +7,11 @@ const header = function () {
     <div class="hero-container__overlay">
       ${getBackgroundIcon()}
     </div>  
+    <div class="hero-container__box">
+      <div class="hero-container__title">
+        ${gradientTextTitle}
+      </div>
+    </div>
   </header>`;
 };
 
