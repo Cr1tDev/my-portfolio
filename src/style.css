@@ -239,3 +239,15 @@ h2 {
     font-size: 1.875rem;
   }
 }
+
+.custom-gradient-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -0.2em;
+  background-image: linear-gradient(to right, #15803d, #22c55e, #4ade80);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

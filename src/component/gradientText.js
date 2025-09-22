@@ -1,16 +1,27 @@
 const gradientTextTitle = function () {
-  const p = document.createElement('p');
-  const span = document.createElement('span');
+  const titleContainer = document.createElement('p');
+  const spanContainer = document.createElement('span');
+  const titleMain = document.createElement('span');
+  const titleInvi = document.createElement('span');
 
-  p.setAttribute('class', 'hero-title__overlay');
-  span.style.display = 'inline-block';
-  span.style.position = 'relative';
+  titleContainer.setAttribute('class', 'hero-title__overlay');
+  spanContainer.setAttribute(
+    'style',
+    'display: inline-block position: relative'
+  );
+  titleMain.setAttribute('class', 'custom-gradient-text');
+  titleInvi.style.visibility = 'hidden';
 
-  p.appendChild(span);
+  titleMain.textContent = 'Web Developer';
+  titleInvi.textContent = 'Web Developer';
 
-  console.log(p);
+  titleContainer.appendChild(spanContainer);
+  spanContainer.appendChild(titleMain);
+  spanContainer.appendChild(titleInvi);
 
-  return 'still fixing';
+  console.log(titleContainer);
+
+  return titleContainer;
 };
 
 export default gradientTextTitle();
